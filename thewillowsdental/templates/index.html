@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}<title>The Willows Dental</title>{% endblock %}
+{% block page-content %}
+  <!-- ================================================================================================================== -->
+  <div class="carausel-container">
+    <div class="pic-ctn">
+      <img src="{% static 'thewillowsdental/images/cover1.jpg' %}" alt="" class="pic">
+      <img src="{% static 'thewillowsdental/images/cover2.jpg' %}" alt="" class="pic">
+      <img src="{% static 'thewillowsdental/images/cover3.jpg' %}" alt="" class="pic">
+      <img src="{% static 'thewillowsdental/images/cover4.jpg' %}" alt="" class="pic">
+      <img src="{% static 'thewillowsdental/images/cover5.jpg' %}" alt="" class="pic">
+    </div>
+  </div>
+  <!-- ================================================================================================================== -->
+  <div class="about-clinic">
+    <h1>Welcome to The Willows Dental Practice</h1>
+    <p>The Willows Dental Practice is located in the village of Belton in rural North Lincolnshire just off junction 2
+      of the M180. The practice has been open since 2008 and is owned and run by Dr Andrew Newton. The practice is run
+      on an independant basis and offers a range of routine family dentistry, orthodontics including Invisalign®
+      invisible braces, cosmetic dentistry, all at affordable prices. Denplan monthly payment plans are also available.
+    </p>
+    <div class="covid">
+      <h3>Covid information</h3>
+      <p>
+        To all our patients.
+
+        This is a challenging time for all of us.
+        Our priority is the safety of our patients and dental team.
+
+        The surgery has now reopened, however inline with current guidance there are restrictions as to the type and
+        availability of dental treatment.
+
+        We are steadily working through the backlog of appointments and will endeavour to contact the patients who had
+        their appointments cancelled during the lockdown closure.
+
+        Please DO NOT attend the surgery in person unless asked to do so.
+
+        Our usual opening hours have resumed but due to the extra time and cleaning which now has to carried out after
+        each patient we are having to see fewer patients each day.
+
+        Outside these hours if you have a dental emergency such as facial swelling, pain that cannot be controlled by
+        the use of pain relief, trauma following an accident, bleeding following an extraction, please contact NHS
+        Direct on 111. If you are a Denplan patient please contact the Denplan helpline on 0800844999
+
+
+        Andrew & all the team
+      </p>
+    </div>
+  </div>
+  <!-- ================================================================================================================== -->
+  <div class="services-carausel">
+    <div class="services-title">
+      <h1>Services Available</h1>
+    </div>
+    <div class="services-card">
+      <input type="radio" name="position"  />
+      <input type="radio" name="position" />
+      <input type="radio" name="position" checked/>
+      <input type="radio" name="position" />
+      <input type="radio" name="position" />
+      <main id="carousel">
+        <div class="item">
+          <div class="card">
+            <img src="{% static 'thewillowsdental/images/Tooth.png' %}" alt="John" style="width:100%; height: 200px;">
+            <h1>Invisalign </h1>
+            <p class="title">Invisible Braces</p>
+            <p>We are proud to be able to offer the Invisalign® system of invisible braces for both adults and
+              teenagers.
+            </p>
+            <p><button>Read More</button></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="{% static 'thewillowsdental/images/Tooth1.png' %}" alt="John" style="width:100%; height: 200px;">
+            <h1>Orthodontics</h1>
+            <p class="title">Orthodontic braces</p>
+            <p>Treatment is available to treat a wide range of disorders. We use Quick Straigh Teeth fixed ceramic
+              braces
+              and Invislaign® invisible aligners.</p>
+            <p><button>Read More</button></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="{% static 'thewillowsdental/images/Tooth2.png' %}" alt="John" style="width:100%; height: 200px;">
+            <h1>Whitening</h1>
+            <p class="title">Cosmetic Tooth Whitening</p>
+            <p>We offer Phillips Zoom NiteWhite or DayWhite. The cost of Whitening is £350</p>
+            <p><button>Read More</button></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="{% static 'thewillowsdental/images/Tooth3.png' %}" alt="John" style="width:100%; height: 200px;">
+            <h1>E-Max crown</h1>
+            <p class="title">all-ceramic crown</p>
+            <p>The E-Max crown is a type of all-ceramic crown which is preferred for its longer lasting, aesthetic
+              qualities</p>
+            <p><button>Read More</button></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="{% static 'thewillowsdental/images/Tooth4.png' %}" alt="John" style="width:100%; height: 200px;">
+            <h1>Zirconia bridges </h1>
+            <p class="title">Top quality bridge</p>
+            <p>A zirconia bridge is considered a top quality type of bridge which is stronger, durable and visually
+              appealing as compared to other types of bridges.</p>
+            <p><button>Read More</button></p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  </div>
+  <!-- ================================================================================================================== -->
+  
+  <div class="doctor-carausel">
+    <div class="doctor-dentist" style="background-image: url({% static '/thewillowsdental/images/doc1.jpg' %}); background-color: skyblue; width: 100%; height: 450px; background-position: right; background-repeat: no-repeat; background-size:contain; position: relative; display: flex; justify-content: start; text-align: left;">
+      <div class="about-person-left"> 
+        <h1>Dr Andrew Newton</h1>
+        <h5> BDS (U.Sheff'd)</h5>
+        <p>Andrew qualified from the University of Sheffield School of Clinical Dentistry in 1988 with the degree of
+          Bachelor of Dental Surgery. Andrew has full General Dental Council Registration no 63683</p>
+        <p>His first position was in a practice in Doncaster town centre. He moved to the Westwoodside practice in 1990
+          and subsequently bought it in 1992 and became principal dentist.
+          Andrew set up this purpose built practice site at The Willows in Belton in 2008 to run as an independant
+          practice and has now passed over control of the Westwoodside practice so that he can concentrate all his
+          efforts at The Willows and carry out the quality care the patients deserve.</p>
+        <!-- <p>Andrew has interests in all aspect of dentistry with a special interest in Orthodontics and cosmetics,
+          recently becoming certified to use the Invisalign system of nearly invisible braces. Andrew has also from 2001
+          until recently, held a part time position in the Orthodontic Department at Lincoln County Hospital dealing
+          with more complex orthodontic cases. He has also been a Vocational Trainer over several years for the Trent
+          Regional Postgraduate Dental Education Office, training new graduate dentists in their first year in general
+          dental practice.</p> -->
+      </div>
+    </div>
+    <div class="doctor-hygine" style="background-image: url({% static '/thewillowsdental/images/doc3.jpg' %}); background-color: skyblue;width: 100%;height: 450px;background-position: left;background-repeat: no-repeat;background-size:contain;position: relative;display: flex;justify-content:right;text-align: right;align-items: flex-start;">
+      <div class="about-person-right">
+        <h1>Mrs Lyn Foster</h1>
+        <h5>Our Hygienist</h5>
+        <p>Lyn qualified as a dental hygienist in the army and has worked for many years in general practice. She is
+          fully registered with the GDC number 2139. Lyn works part time at the practice and is available on a Monday
+          morning and afternoon by appointment on a private basis. Lyn also works at other practices in Scunthorpe and
+          Goole.</p>
+      </div>
+    </div>
+    <div class="doctor-nurse" style="background-image: url({% static '/thewillowsdental/images/doc2.jpg' %});background-color: skyblue; width: 100%; height: 450px; background-position: right; background-repeat: no-repeat; background-size:contain; position: relative; display: flex; justify-content: start; text-align: left;">
+      <div class="about-person-left">
+        <h1>Our Nursing Team</h1>
+        <p>Our nursing team are dedicated to assisting the dentists to provide you with quality dental care. Our nurses
+          all take part in continual professional development training to keep their knowledge and skills up to date.
+          Some of our nurses also have further qualifications in dental radiography to allow them to take x-rays.
+          Our nursing team are all fully qualified and registered with the General Dental Council and all take an active
+          part in Continual Professional Development as required by the General Dental Council. </p>
+        <!-- <table>
+          <tr>
+            <td> <strong>Elaine Harris</strong></td>
+            <td>GDC registered dental nurse 117631, also qualified in
+              dental radiography</td>
+          </tr>
+          <tr>
+            <td><strong> Jones</strong></td>
+            <td>GDC registered dental nurse 117653, also qualified in
+              dental radiography</td>
+          </tr>
+          <tr>
+            <td><strong>Karen Newton</strong></td>
+            <td>GDC registered dental nurse 117638</td>
+          </tr>
+          <tr>
+            <td><strong>Samantha Talbot</strong></td>
+            <td>GDC registered dental nurse 131106</td>
+          </tr>
+          <tr>
+            <td><strong>Lorraine Langton</strong></td>
+            <td>GDC registered dental nurse 120839</td>
+          </tr>
+        </table> -->
+      </div>
+    </div>
+  </div>
+  <!-- ================================================================================================================== -->
+  <div class="testimonial-carausel">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>What Our Customers Says</h2>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="img-box"><img src="{% static 'thewillowsdental/images/client1.jpg' %}" alt=""></div>
+                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor,
+                  varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac
+                  bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+              </div>
+              <div class="carousel-item">
+                <div class="img-box"><img src="{% static 'thewillowsdental/images/client2.jpg' %}" alt=""></div>
+                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi
+                  suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis.
+                  Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+              </div>
+              <div class="carousel-item">
+                <div class="img-box"><img src="{% static 'thewillowsdental/images/client3.jpg' %}" alt=""></div>
+                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam
+                  faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus,
+                  volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ========================================================== -->
+  <div class="location-map">Enter Google map here</div>
+<!-- ======================================================== -->
+{% endblock %}

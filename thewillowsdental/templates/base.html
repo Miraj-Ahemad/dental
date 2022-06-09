@@ -1,0 +1,169 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% block title %} {% endblock %}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'thewillowsdental/css/style.css' %}">
+  <script src="{% static '/js/script.js' %}"></script>
+</head>
+<!-- ===================Header Bar===================================================================================== -->
+
+<body>
+  <div class="header">
+    <div class="logo-box">
+      <img class="logo" src="{% static '/images/Tooth.png' %}" alt="logo">
+      <h1>The Willows Dental Clinic</h1>
+    </div>
+    <div class="appointment-header-box">
+      <a href="#"><img class="icon" src="{% static '/images/email.png' %}" alt="email">Drop Mail</a>
+      <a href="#"><img class="icon" src="{% static '/images/telephone.png' %}" alt="email">Call Us Now</a>
+      <button class="btn">Appointment</button>
+    </div>
+  </div>
+  <!-- =================Navigation Bar===================================================================================== -->
+  <div class="navbar-container">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Book Appointment</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+  {% block page-content %}{% endblock %}
+  <!-- ========================Footer=============================================================================== -->
+  <footer>
+    <div class="page-wrapper">
+      <div id="waterdrop"></div>
+      <footer>
+        <div class="footer-top">
+          <div class="pt-exebar">
+
+          </div>
+          <div class="container1">
+            <div class="row">
+              <div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
+                <div class="widget footer_widget">
+                  <h5 class="footer-title">Address</h5>
+                  <div class="gem-contacts">
+                    <div class="gem-contacts-item gem-contacts-address">Address :<br> 49<br>The Willows Dental Practice<br>Westgate Road, Belton<br>Doncaster, N Lincs<br>DN9 1PY
+                    </div>
+                    <div class="gem-contacts-item gem-contacts-phone"><i class="fa fa-phone" aria-hidden="true"></i>
+                      Phone:<br> <a href="">01427 872106</a>
+                    </div>
+                    <div class="gem-contacts-item gem-contacts-phone"><i class="fa fa-phone" aria-hidden="true"></i>
+                      Email:<br> <a href="mailto:reception@thewillowsdentalpractice.co.uk">reception@thewillowsdentalpractice.co.uk</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5 col-md-6 col-sm-12">
+                <div class="row">
+                  <div class="col-6 col-lg-12 col-md-6 col-sm-12">
+                    <div class="widget">
+                      <h5 class="footer-title">Email Us</h5>
+                      <div class="textwidget">
+                        <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+
+                          <form method="post" class="wpcf7-form" novalidate="novalidate">
+
+                            <div class="contact-form-footer">
+                              <p><span class="wpcf7-form-control-wrap your-first-name"><input type="text"
+                                    name="your-first-name" value="" size="40" class="wpcf7-form-control wpcf7-text"
+                                    aria-invalid="false" placeholder="My Name is"></span></p>
+                              <p><span class="wpcf7-form-control-wrap your-email_1"><input type="email"
+                                    name="your-email_1" value="" size="40"
+                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email"
+                                    aria-invalid="false" placeholder="My Email is"></span></p>
+                              <p><span class="wpcf7-form-control-wrap your-phone"><input type="email"
+                                name="your-phone" value="" size="40"
+                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email"
+                                aria-invalid="false" placeholder="My Contact Number is"></span></p>
+                              <p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message"
+                                    cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"
+                                    placeholder="Your message"></textarea></span></p>
+                              <div><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><span
+                                  class="ajax-loader"></span></div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 col-md-5 col-sm-12 footer-col-4">
+                <div class="widget widget_gallery gallery-grid-4">
+                  <h5 class="footer-title">Our Gallery</h5>
+                  <ul class="magnific-image">
+
+                    <li><a class="magnific-anchor"><img
+                          src="https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80"
+                          alt=""></a></li>
+                    <li><a class="magnific-anchor"><img
+                          src="https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80"
+                          alt=""></a></li>
+                    <li><a class="magnific-anchor"><img
+                          src="https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80"
+                          alt=""></a></li>
+                    <li><a class="magnific-anchor"><img
+                          src="https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80"
+                          alt=""></a></li>
+                    <li><a class="magnific-anchor"><img
+                          src="https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80"
+                          alt=""></a></li>
+                    <li><a class="magnific-anchor"><img
+                          src="https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80"
+                          alt=""></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="footer-site-info">2022 © <a href="http://www.thewillowsdentalpractice.co.uk"
+                    target="_blank">The Willows Dental Clinic </a></div>
+              </div>
+              <div class="col-md-8" style="text-align: right;">
+                <div class="footer-dev-info">Designed by: Miraj Ahemad</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+
+    <script> jQuery('#waterdrop').raindrops({ color: '#1c1f2f', canvasHeight: 150, density: 0.1, frequency: 20 });
+    </script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
+
+</html>
